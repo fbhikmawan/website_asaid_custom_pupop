@@ -26,7 +26,6 @@ Modal appearance will be toggled by Website Builder options.
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
         'views/modal_template.xml',
@@ -39,10 +38,5 @@ Modal appearance will be toggled by Website Builder options.
             'website_asaid_custom_popup/static/src/scss/websiteAds.scss',
         ],
     },
-
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
 }
 

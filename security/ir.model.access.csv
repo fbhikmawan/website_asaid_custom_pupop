@@ -1,2 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_website_asaid_custom_popup_website_asaid_custom_popup,website_asaid_custom_popup.website_asaid_custom_popup,model_website_asaid_custom_popup_website_asaid_custom_popup,base.group_user,1,1,1,1
