@@ -16,7 +16,7 @@ ASAid Custom Popup is a custom Odoo 17 module that allows you to display custom 
 
 1. Clone this repository into your Odoo addons directory:
    ```
-   git clone https://github.com/your-repo/website_asaid_custom_popup.git
+   git clone https://github.com/fbhikmawan/website_asaid_custom_pupop.git
    ```
 
 2. Update your Odoo addons list:
