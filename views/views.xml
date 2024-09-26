@@ -1,0 +1,68 @@
+<odoo>
+  <data>
+    <record id="view_website_page_form" model="ir.ui.view">
+      <field name="name">website.page.form.inherit</field>
+      <field name="model">website.page</field>
+      <field name="inherit_id" ref="website.website_page_properties_view_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//page[@name='page_publish']/group" position="inside">
+          <field name="show_modal" string="Show Modal" widget="boolean_toggle"/>
+        </xpath>
+      </field>
+    </record>
+
+    <!--
+    <record model="ir.ui.view" id="website_asaid_custom_popup.list">
+      <field name="name">website_asaid_custom_popup list</field>
+      <field name="model">website_asaid_custom_popup.website_asaid_custom_popup</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="website_asaid_custom_popup.action_window">
+      <field name="name">website_asaid_custom_popup window</field>
+      <field name="res_model">website_asaid_custom_popup.website_asaid_custom_popup</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="website_asaid_custom_popup.action_server">
+      <field name="name">website_asaid_custom_popup server</field>
+      <field name="model_id" ref="model_website_asaid_custom_popup_website_asaid_custom_popup"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="website_asaid_custom_popup" id="website_asaid_custom_popup.menu_root"/>
+-->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="website_asaid_custom_popup.menu_1" parent="website_asaid_custom_popup.menu_root"/>
+    <menuitem name="Menu 2" id="website_asaid_custom_popup.menu_2" parent="website_asaid_custom_popup.menu_root"/>
+-->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="website_asaid_custom_popup.menu_1_list" parent="website_asaid_custom_popup.menu_1" action="website_asaid_custom_popup.action_window"/>
+    <menuitem name="Server to list" id="website_asaid_custom_popup" parent="website_asaid_custom_popup.menu_2" action="website_asaid_custom_popup.action_server"/>
+-->
+  </data>
+</odoo>

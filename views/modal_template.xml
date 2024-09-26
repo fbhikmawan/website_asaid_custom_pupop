@@ -1,0 +1,15 @@
+<odoo>
+    <template id="modal_template" name="Website Ads">
+        <div id="modalAds" class="website_asaid_custom_popup_modal-wrapper" style="display: none;">
+            <div class="website_asaid_custom_popup_modal">
+                <a href="#" class="website_asaid_custom_popup_close">X</a>
+                <div class="modal-header">
+                    <h2>Advertisement</h2>
+                </div>
+                <div class="modal-content">
+                    <p>Your ad content here.</p>
+                </div>
+            </div>
+        </div>
+    </template>
+</odoo>
